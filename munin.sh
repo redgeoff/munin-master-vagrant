@@ -14,6 +14,11 @@ echo "logdir /var/log/munin" >> /etc/munin/munin.conf
 echo "rundir /var/run/munin" >> /etc/munin/munin.conf
 echo "tmpldir /etc/munin/templates" >> /etc/munin/munin.conf
 
+# Configure munin node (https://github.com/redgeoff/munin-node-vagrant)
+echo "[MuninNode]" >> /etc/munin/munin.conf
+echo "  address 192.168.50.20" >> /etc/munin/munin.conf
+echo "  use_node_name yes" >> /etc/munin/munin.conf
+
 # Change name of main tree
 sed -i "s'localhost.localdomain'MuninMaster'" /etc/munin/munin.conf
 

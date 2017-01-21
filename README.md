@@ -1,8 +1,8 @@
-# munin-vagrant
+# munin-master-vagrant
 
 A quick way to get Munin set up
 
-TODO: Details about adding a node, protecting with htaccess, configuring plugins
+TODO: Details about protecting with htaccess and configuring plugins
 
 
 Install Vagrant, VirtualBox and git
@@ -20,8 +20,7 @@ Set up
     $ git clone https://github.com/redgeoff/munin-vagrant.git
     $ cd ubuntu-vagrant
     $ vagrant up
-    $ vagrant ssh
-    Visit munin.dev/munin # Note: you may have to wait 5 mins for munin to run and initialize the files
+    Visit http://munin.dev/munin # Note: you may have to wait 5 mins for munin to run and initialize the files
 
 
 Sources:

@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
 
-# Update apt-get
-apt-get update -y
+/vagrant/ubuntu.sh
 
-# Update Ubuntu
-apt-get -y upgrade
-apt-get -y dist-upgrade
+/vagrant/apache.sh
 
-# Install Apache
-apt-get install -y apache2 apache2-utils
-
-# Support for dynazoom, which allows us to zoom into graphs
-apt-get install -y libcgi-fast-perl libapache2-mod-fcgid
+/vagrant/dynazoom.sh
 
 /vagrant/munin.sh
