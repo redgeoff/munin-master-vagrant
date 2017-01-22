@@ -30,7 +30,7 @@ Changing the password
 
     $ vagrant ssh
     $ sudo htpasswd -D /etc/munin/munin-htpasswd NEWUSERNAME
-    $ sudo htpasswd /etc/munin/munin-htpasswd NEWPASSWORD
+    $ sudo htpasswd /etc/munin/munin-htpasswd NEWUSERNAME
     You can now visit http://munin.dev/munin and log in with NEWUSERNAME and NEWPASSWORD
 
 
