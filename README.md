@@ -2,8 +2,6 @@
 
 A quick way to get a Munin master server set up
 
-TODO: Details about protecting with htaccess and configuring plugins
-
 
 Install Vagrant, VirtualBox and git
 ---
@@ -21,6 +19,19 @@ Set up
     $ cd ubuntu-vagrant
     $ vagrant up
     Visit http://munin.dev/munin # Note: you may have to wait 5 mins for munin to run and initialize the files
+      Log in with:
+        User Name: munin
+        Password: munin
+      See below for details on how to change this password
+
+
+Changing the password
+---
+
+    $ vagrant ssh
+    $ sudo htpasswd -D /etc/munin/munin-htpasswd NEWUSERNAME
+    $ sudo htpasswd /etc/munin/munin-htpasswd NEWPASSWORD
+    You can now visit http://munin.dev/munin and log in with NEWUSERNAME and NEWPASSWORD
 
 
 Sources:
