@@ -1,6 +1,6 @@
 # munin-master-vagrant
 
-A quick way to get Munin set up
+A quick way to get a Munin master server set up
 
 TODO: Details about protecting with htaccess and configuring plugins
 

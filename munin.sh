@@ -23,7 +23,7 @@ echo "  use_node_name yes" >> /etc/munin/munin.conf
 sed -i "s'localhost.localdomain'MuninMaster'" /etc/munin/munin.conf
 
 # Configure Apache
-cp apache.conf /etc/munin
+cp apache.conf /etc/munin/apache24.conf
 
 # Restart Apache and Munin
 service apache2 restart
