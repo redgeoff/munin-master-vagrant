@@ -26,7 +26,7 @@ sed -i "s'localhost.localdomain'MuninMaster'" /etc/munin/munin.conf
 cp apache.conf /etc/munin/apache24.conf
 
 # Configure Apache authentication passwords
-cp munin-password /etc/munin/munin-htpasswd
+cp munin-htpasswd /etc/munin/munin-htpasswd
 
 # Configure Apache password protection
 sudo -u munin .htaccess /var/cache/munin/www
