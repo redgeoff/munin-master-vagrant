@@ -25,6 +25,15 @@ Set up
       See below for details on how to change this password
 
 
+Adding a Munin Node
+---
+    ssh into Munin Master
+    Edit /etc/munin/munin.conf
+      [HOSTNAME]
+        address IPADDROFNODE
+        use_node_name yes
+
+
 Changing the password
 ---
 
